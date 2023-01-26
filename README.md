@@ -186,9 +186,9 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
- [Implement Front-end UI using react]
- [Add authentication and authorization]
- [Deploy Online]
+- [Implement Front-end UI using react]
+- [Add authentication and authorization]
+- [Deploy Online]
 
 > Describe 1 - 3 features you will add to the project.
 
