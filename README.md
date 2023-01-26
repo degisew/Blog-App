@@ -126,29 +126,19 @@ To get a local copy up and running follow these simple example steps.
 1. Navigate to a folder where you want the cloned file to appear
 
 2. Clone this repo in your terminal or git bash using the command
+```sh
+  cd Blog-App
+  git clone git@github.com:degisew/Blog-App.git
+```
 
-   ```
-     git clone <URL> 'https://github.com/degisew/Blog-App' in your terminal
-      
-   ```
-
-3. run
+3. run the following command to install all the necessary dependencies including the linters
 
  ```sh
   cd Blog-App
   gem install
 ``` 
-to install all the necessary dependencies including the linters
 
 4. Navigate to the folder called Blog-App/ and open this project using your editor
-### Setup
-
-Clone this repository to your desired folder:
-
-```sh
-  cd Blog-App
-  git clone git@github.com:degisew/Blog-App.git
-```
 ### Usage
 
 To run the project, execute the following command:
