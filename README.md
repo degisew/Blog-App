@@ -27,7 +27,6 @@ After you're finished please remove all the comments and instructions!
   <img src="https://user-images.githubusercontent.com/86473715/208989298-61c26953-a6ea-4543-9250-465e28dd057a.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
 
 </div>
 
