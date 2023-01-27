@@ -86,11 +86,9 @@ After you're finished please remove all the comments and instructions!
 </details>
 
 <!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
-
 - **[add post]**
 - **[see posts]**
 - **[add comments]**
