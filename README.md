@@ -70,7 +70,6 @@ After you're finished please remove all the comments and instructions!
 - Ruby on Rails
 > Describe the tech stack and include only the relevant sections that apply to your project.
 
-
 <details>
   <summary>Server</summary>
   <ul>
