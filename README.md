@@ -70,7 +70,6 @@ After you're finished please remove all the comments and instructions!
 - Ruby on Rails
 > Describe the tech stack and include only the relevant sections that apply to your project.
 
-
 <details>
   <summary>Server</summary>
   <ul>
@@ -86,11 +85,9 @@ After you're finished please remove all the comments and instructions!
 </details>
 
 <!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
-
 - **[add post]**
 - **[see posts]**
 - **[add comments]**
@@ -236,7 +233,7 @@ I would like to thank the Microverse team.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/degisew/Blog-App/blob/models/LICENSE) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
