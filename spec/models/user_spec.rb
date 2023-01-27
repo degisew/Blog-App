@@ -4,7 +4,6 @@ RSpec.describe User, type: :model do
   user = User.new(photo: 'http://example.com', bio: 'software enginner', posts_counter: 0)
   before { user.save }
 
-
   describe 'validation of presense' do
     it do
       should validate_presence_of(:name)
