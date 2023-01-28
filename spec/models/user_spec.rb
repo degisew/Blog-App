@@ -17,9 +17,9 @@ RSpec.describe User, type: :model do
   describe 'validation of custom method' do
     it 'recent_post should return 1' do
       user2 = User.create(name: 'Mahi', photo: 'http://example.com', bio: 'Hi there', posts_counter: 0)
-      Post.create(author_id: user2.id, title: 'Rails intro', text: 'Hello rails intro', comments_counter: 2,
+      Post.create(user_id: user2.id, title: 'Rails intro', text: 'Hello rails intro', comments_counter: 2,
                   likes_counter: 0)
-      expect(user2.recent_post.size).to be 0
+      expect(user2.recent_post.size).to be 1
     end
   end
 end

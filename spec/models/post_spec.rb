@@ -1,10 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  user2 = User.new(name: 'Dagi', photo: 'https://example.com', bio: 'Software enginner', posts_counter: 0)
-  post1 = Post.create(author_id: user2, title: 'RoR', text: 'Hello rails intro', comments_counter: 0,
-                      likes_counter: 0)
-
   describe 'validation presence' do
     it { should validate_presence_of(:title) }
   end
@@ -16,11 +12,15 @@ RSpec.describe Post, type: :model do
   end
 
   describe 'validation of custom methods' do
+    user2 = User.create(name: 'Dagi', photo: 'https://example.com', bio: 'Software enginner', posts_counter: 0)
+    post1 = Post.create(user_id: user2.id, title: 'RoR', text: 'Hello rails intro', comments_counter: 0,
+                        likes_counter: 0)
     it 'recent_five_comment should return 0' do
-      #    user2 = User.new(name: 'Dagi', photo: 'https://example.com', bio: 'Software enginner', posts_counter: 0)
-      #  post1 = Post.create(author: user2, title: 'RoR', text: 'Hello rails intro', comment_counter: 0,
-      #                         like_counter: 0)
       expect(post1.recent_comments.size).to be 0
+    end
+    it 'post_counter_updater should return 1' do
+      counter = post1.post_counter_updater.posts_counter
+      expect(counter).to be 2
     end
   end
 end
