@@ -1,0 +1,8 @@
+<div class='container'>
+<%= image_tag (user_profile.photo), alt: 'avatar', class:'user-img'%>
+<div class='username'>
+ <h2 class='user-name'><%= user_profile.name%></h2>
+ <p class ='number-of-post'>Number of posts: <%= user_profile.posts_counter || 0 %></p>
+</div>
+</div> 
+

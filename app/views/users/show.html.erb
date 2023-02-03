@@ -1,1 +1,11 @@
-<h1>Show specific user by id</h1>
+<div class='user-detail'>
+<%= render partial: 'shared/user_profile', object: @user %>
+  <div class='bio'>
+  <h3>Bio</h3>
+  <p><%=@user.bio%></p>
+  </div>
+  <div class='list-of-posts'>
+  <%=render @user.recent_post%>
+  </div>
+  <%=button_to('see all posts')%>
+</div>
