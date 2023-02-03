@@ -1,1 +1,8 @@
-<h1>Show all posts for a specific user</h1>
+<%= render partial: 'shared/user_profile', object: @user %>
+<div class='post-comment'>
+<% Post.includes(:comments).where(user_id: @user).each do |post|%>
+<%= render 'post', post: post, user: @user%>
+<%= render 'comment', post: post%>
+<%end%><br>
+<%= link_to 'Pagination', users_path, class: 'btn-all-post button' %>
+<div>

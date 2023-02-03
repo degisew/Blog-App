@@ -1,1 +1,11 @@
-<h1>Show specific post for a specific user id</h1>
+  <div class=flex>
+    <div class=post-header>
+     <h3><%= @post.title %> by <%= @post.user.name %></h3>
+    </div>
+  <%= @post.text %>
+    <div class='like-comment'>
+    <div>Comments: <%=@post.comments_counter || 0%></div>
+    <div>Likes: <%=@post.likes_counter || 0%></div>
+  </div>
+  </div>
+</div>
